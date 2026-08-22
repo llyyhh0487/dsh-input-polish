@@ -1,0 +1,5 @@
+# dsh-input-polish bundle patch: one insert registering the dual-face plugin.
+# The `name` must match the node half's exported cordis `name` in src/index.ts.
+- insert:
+    - id: input-polish
+      name: 'dsh-input-polish'
