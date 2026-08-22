@@ -1,4 +1,6 @@
 node_modules/
-lib/
 *.log
 .DS_Store
+# 注意：lib/ 是编译产物，但本插件通过 github: 直装（pnpm 对 git 依赖默认禁用
+# prepare/build 脚本），因此必须把 lib/ 提交到仓库，否则 github: 装出来是空壳
+# （package.json 的 main 指向 lib/index.js）。每次改完 src 记得重新 npm run build。
